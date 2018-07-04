@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Form, Select, InputNumber, DatePicker, Switch, Slider, Button, message, Row, Col } from 'antd';
+import { Form, Select, InputNumber, DatePicker, Switch, Slider, Button, message, Row, Col, Alert } from 'antd';
 const FormItem = Form.Item;
 const Option = Select.Option;
 
@@ -22,6 +22,7 @@ const Demo = React.createClass({
   render() {
     return (
       <Form horizontal>
+        <Alert message="hi～今天过得真开心" type="error" />
         <FormItem
           label="数字输入框"
           labelCol={{ span: 8 }}
